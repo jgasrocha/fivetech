@@ -19,6 +19,10 @@ import ReactJs from '../assets/react.svg';
 import Django from '../assets/django.svg';
 import Vue from '../assets/vue.svg';
 import Flutter from '../assets/flutter.svg';
+
+import Gabriel from '../assets/joaogabriel.jpg';
+import Guilherme from '../assets/guilherme.png';
+import Lucas from '../assets/lucas.png';
 import './portifolio.css';
 
 const Portfolio = () => {
@@ -106,11 +110,11 @@ const Portfolio = () => {
   ];
 
   const teamMembers = [
-    { name: 'João Gabriel', position: 'CEO' },
-    { name: 'Guilherme Teles', position: 'Design Lead' },
-    { name: 'Mário Júnior', position: 'CTO' },
-    { name: 'Lucas Silva', position: 'Marketing' },
-    { name: 'Wilton Nascimento', position: 'Developer' }
+    { name: 'João Gabriel', position: 'CEO', image: Gabriel },
+    { name: 'Guilherme Teles', position: 'Design Lead', image: Guilherme },
+    { name: 'Mário Júnior', position: 'CTO', image: 'https://i.pravatar.cc/150?img=3' },
+    { name: 'Lucas Silva', position: 'Marketing', image: Lucas },
+    { name: 'Wilton Nascimento', position: 'Developer', image: 'https://i.pravatar.cc/150?img=4' },
   ];
 
   const [visibleProjects, setVisibleProjects] = useState(initialProjects);
@@ -219,7 +223,7 @@ const Portfolio = () => {
                 <div key={idx} className="team-card">
                   <div className="team-avatar">
                     <img
-                      src={`https://i.pravatar.cc/150?img=${idx + 10}`}
+                      src={member.image}
                       alt={member.name}
                       className="avatar-image"
                     />
