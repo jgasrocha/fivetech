@@ -52,16 +52,6 @@ const Portfolio = () => {
       description: 'Número nas estrelas - Jogo de matemática para crianças',
       image: Projeto4
     },
-    {
-      title: 'Project Five',
-      description: 'Additional project details here.',
-      image: 'https://via.placeholder.com/300x150?text=Project+5'
-    },
-    {
-      title: 'Project Six',
-      description: 'Another amazing project we completed.',
-      image: 'https://via.placeholder.com/300x150?text=Project+6'
-    }
   ];
 
   const initialServices = [
