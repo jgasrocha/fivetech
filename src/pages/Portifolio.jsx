@@ -5,7 +5,7 @@ import ProjectCard from '../components/Projects/ProjectCard';
 import ServiceCard from '../components/Services/ServiceCard';
 import TechnologiesCard from '../components/Technologies/TechnologiesCard.jsx';
 import Contact from '../components/Contact/Contact.jsx';
-import LogoFivetec from '../assets/logoNova.png';
+import LogoFivetec from '../assets/logoAtual.png';
 import Projeto1 from '../assets/proj1.png';
 import Projeto2 from '../assets/proj2.png';
 import Projeto3 from '../assets/proj3.png';
@@ -151,15 +151,15 @@ const Portfolio = () => {
               <div className="company-description">
                 <p className="section-subtitle fivetec-description">
                   {<p className="section-subtitle fivetec-description">
-                    A <strong>Fivetec</strong> é uma empresa de tecnologia especializada no desenvolvimento de <strong>soluções digitais</strong>, oferecendo serviços completos nas áreas de <strong>criação de sites</strong>, <strong>desenvolvimento de jogos eletrônicos</strong> e <strong>aplicativos para Android</strong>.
+                    A <strong>Fivetech</strong> é uma empresa de tecnologia especializada no desenvolvimento de <strong>soluções digitais</strong>, oferecendo serviços completos nas áreas de <strong>criação de sites</strong>, <strong>desenvolvimento de jogos eletrônicos</strong> e <strong>aplicativos para Android</strong>.
                     <br /><br />
                     Nossa atuação abrange todas as etapas do projeto, desde a concepção inicial até a entrega final, sempre com foco em <strong>inovação</strong>, <strong>qualidade</strong> e <strong>eficiência</strong>.
                     <br /><br />
-                    Fundada com o propósito de <em>tornar realidade o sonho de ter uma presença online</em>, a Fivetec nasceu para atender pessoas e empresas que desejam transformar ideias em produtos digitais modernos, funcionais e personalizados.
+                    Fundada com o propósito de <em>tornar realidade o sonho de ter uma presença online</em>, a Fivetech nasceu para atender pessoas e empresas que desejam transformar ideias em produtos digitais modernos, funcionais e personalizados.
                     <br /><br />
                     Comprometemo-nos com a <strong>excelência técnica</strong>, a <strong>escuta ativa</strong> de nossos clientes e a entrega de soluções que realmente fazem a diferença no cenário digital atual.
                     <br /><br />
-                    <strong>Fivetec — Conectando o seu projeto ao mundo.</strong>
+                    <strong>Fivetech — Conectando o seu projeto ao mundo.</strong>
                   </p>}
                 </p>
               </div>

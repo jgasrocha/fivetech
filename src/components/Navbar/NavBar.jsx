@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logoImage from "../../assets/logoNova.png";
+import logoImage from "../../assets/logoAtual.png";
 import './navbar.css';
 
 export default function NavBar() {
