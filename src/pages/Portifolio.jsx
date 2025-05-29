@@ -163,7 +163,7 @@ const Portfolio = () => {
             <div className="section-header">
               <h3 className="section-title">Projetos</h3>
               <button onClick={toggleProjects} className="view-all-btn">
-                {showAllProjects ? 'Show Less' : 'View All Projects'}
+                {showAllProjects ? 'Ver Menos' : 'Ver Mais'}
               </button>
             </div>
             <div className="projects-grid">
