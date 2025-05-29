@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="footer-content">
         <div className="footer-brand">
-          <h2>FIVETEC</h2>
+          <h2>FIVETECH</h2>
           <p>Conectando o seu projeto ao mundo.</p>
         </div>
 
@@ -22,13 +22,13 @@ const Footer = () => {
 
         <div className="footer-contact">
           <h4>Contato</h4>
-          <p>Email: contato@fivetec.com</p>
+          <p>Email: contato@fivetech.com</p>
           <p>Telefone: (99) 99999-9999</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} FIVETEC. Todos os direitos reservados.</p>
+        <p>&copy; {new Date().getFullYear()} FIVETECH. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
