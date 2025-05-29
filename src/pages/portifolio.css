@@ -1,0 +1,299 @@
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+               Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.portfolio-container {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-main {
+  width: 100%;
+  padding: 0;
+}
+
+/* Seções com background expandido */
+.section-with-bg {
+  width: 100%;
+}
+
+.section-bg-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem;
+}
+
+/* Cabeçalho - Sobre a empresa */
+#home {
+  background-color: #f8fafc;
+}
+
+/* Seção de Projetos */
+#projects {
+  background-color: white;
+}
+
+/* Seção de Serviços */
+#services {
+  background-color: #f9fafb;
+}
+
+/* Seção de Tecnologias */
+#technologies {
+  background-color: white;
+}
+
+/* Seção do Time */
+#team {
+  background-color: #f8fafc;
+}
+
+/* Estilos do conteúdo */
+.company-presentation {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.company-logo {
+  width: 350px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+
+.company-description {
+  flex: 1;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2E2E2E;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: #666666;
+  font-size: 1.125rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.fivetec-description {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  text-align: left;
+  color: #444;
+  margin-top: 0;
+}
+
+/* Grid de Projetos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Grid de Serviços */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Carrossel de Tecnologias */
+.technologies-section {
+  overflow: hidden;
+  position: relative;
+  margin: 2rem 0;
+  padding: 1rem 0;
+}
+
+.technologies-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: calc(150px * 12);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 6));
+  }
+}
+
+.technologies-section:hover .technologies-container {
+  animation-play-state: paused;
+}
+
+/* Grid do Time */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.team-card {
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 160px;
+}
+
+/* Posicionamento dos cards do time */
+.team-card:nth-child(1) { grid-column: 1 / span 2; grid-row: 1; }
+.team-card:nth-child(2) { grid-column: 3 / span 2; grid-row: 1; }
+.team-card:nth-child(3) { grid-column: 5 / span 2; grid-row: 1; }
+.team-card:nth-child(4) { grid-column: 2 / span 2; grid-row: 2; }
+.team-card:nth-child(5) { grid-column: 4 / span 2; grid-row: 2; }
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 3px solid #A2D5AB;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  margin-top: 1rem;
+}
+
+.team-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2E2E2E;
+  margin-bottom: 0.5rem;
+}
+
+.team-position {
+  color: #2e8b57;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Botões */
+.view-all-btn {
+  color: #2e8b57;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background: none;
+  border: 2px solid #2e8b57;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.view-all-btn:hover {
+  color: white;
+  background-color: #2e8b57;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .team-grid {
+    max-width: 700px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .team-card:nth-child(1) { grid-column: 1 / span 2; grid-row: 1; }
+  .team-card:nth-child(2) { grid-column: 3 / span 2; grid-row: 1; }
+  .team-card:nth-child(3) { grid-column: 2 / span 2; grid-row: 2; }
+  .team-card:nth-child(4) { grid-column: 1 / span 2; grid-row: 3; }
+  .team-card:nth-child(5) { grid-column: 3 / span 2; grid-row: 3; }
+}
+
+@media (max-width: 768px) {
+  .section-bg-container {
+    padding: 3rem 1.5rem;
+  }
+  
+  .company-presentation {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .company-logo {
+    width: 200px;
+  }
+  
+  .portfolio-header .section-title,
+  .fivetec-description {
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+  }
+  
+  .team-card:nth-child(n) {
+    grid-column: span 1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-bg-container {
+    padding: 2rem 1rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+  
+  .team-card {
+    width: 100%;
+    max-width: 250px;
+  }
+}

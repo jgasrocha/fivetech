@@ -1,0 +1,30 @@
+.technologies-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #A2D5AB;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    min-width: 150px;
+    margin: 0 1rem;
+    flex-shrink: 0;
+}
+
+.technologies-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px #2e8b57;
+}
+
+.technologies-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.technologies-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2e2e2e;
+    margin-bottom: 0;
+}

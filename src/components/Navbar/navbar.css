@@ -1,0 +1,124 @@
+/* Estilo escuro baseado no footer */
+:root {
+    --primary-color: #2E2E2E;     /* Fundo escuro da navbar */
+    --secondary-color: #39AEA9;   /* Verde destaque */
+    --text-color: #FFFFFF;        /* Texto claro */
+    --hover-color: #2e8b57;       /* Hover */
+    --muted-color: #AAAAAA;       /* Cor sutil para detalhes */
+}
+
+/* Estilos base */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    color: var(--hover-color);
+}
+
+/* Efeito de sublinhado ao passar o mouse */
+.nav-links a:not(.contact-link)::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--hover-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Item ativo */
+.nav-links a.active {
+    color: var(--hover-color);
+    font-weight: 600;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+    background-color: var(--hover-color);
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 0.3rem 0;
+    }
+
+    .contact-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+}
