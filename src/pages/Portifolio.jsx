@@ -207,7 +207,9 @@ const Portfolio = () => {
         {/* Seção Time */}
         <section id="team" className="section-with-bg">
           <div className="section-bg-container">
+            <div className="section-header">
             <h3 className="section-title">Time FIVE</h3>
+            </div>
             <div className="team-grid">
               {teamMembers.map((member, idx) => (
                 <div key={idx} className="team-card">
